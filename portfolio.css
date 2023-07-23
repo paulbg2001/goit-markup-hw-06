@@ -233,18 +233,18 @@ button:hover {
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+
+
 .overlay-project {
   width: 370px;
-  height: 294px;
+  height: 0;
   flex-shrink: 0;
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    bottom: 108px;
   overflow: hidden;
   width: 100%;
-  top: 100%;
-  visibility: hidden;
 }
 
 .overlay-project .overlay-project-text {
@@ -259,8 +259,7 @@ button:hover {
 }
 
 .project:hover .overlay-project {
-  top: 0;
-  visibility: visible;
+  height: 294px;
 }
 
 .project h5 {

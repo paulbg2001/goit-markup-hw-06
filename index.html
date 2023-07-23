@@ -769,7 +769,7 @@
       
       <label for="">
         <p class="label-text">Name</p>
-        <input type="text" name="Username" required>
+        <input type="text" name="Username" autocomplete="off" required>
         <svg>
           <use href="./icons/icons.svg#icon-person-black-18dp-1"></use>
         </svg>
@@ -777,7 +777,7 @@
       </label>
         <label for="">
           <p class="label-text">Telephone</p>
-          <input type="number" name="Telephone" required > 
+          <input type="tel" name="Telephone" required > 
           <svg>
             <use href="./icons/icons.svg#icon-phone-black-18dp-1"></use>
           </svg>
@@ -795,10 +795,13 @@
     <label for="">
       <p class="label-text">Comments</p>
       <textarea name="Comments" placeholder="Enter the text" cols="60" rows="10" ></textarea>
-      
     </label>
       
-      
+  <label class="terms-cond-text">
+    <input class="checkbox" type="checkbox" name="terms&cond" value="agreee" required />
+    <span class="checkbox-text">I agree with the letter and accept the <span class="terms-cond">Terms and Conditions</span></span>
+  </label>
+    <button class="submit-btn" type="submit">Send</button>
     </form>
   </div>
 </div>
