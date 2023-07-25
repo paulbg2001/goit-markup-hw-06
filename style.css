@@ -618,9 +618,6 @@ form label svg {
   left: 12px;
 }
 
-form input:hover{
-  fill: #2196f3;
-}
 
 form input {
   width: 448px;
@@ -630,6 +627,7 @@ form input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
   /* position: relative; */
+  padding-left: 42px;
 }
 
 
@@ -642,9 +640,20 @@ form textarea {
   cursor: pointer;
 }
 
+form textarea:focus,
+form textarea:hover{
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
 form input:hover,
 form input:focus {
   border: 1px solid #2196f3;
+  outline: none;
+}
+
+form label input:focus,form label input:hover + svg{
+  fill: #2196f3;
 }
 
 form .modal-title {
